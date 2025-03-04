@@ -1,0 +1,68 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Flex container for AI Analysis and Video */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* AI Analysis on the Left */
+.ai-analysis {
+    width: 40%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.ai-analysis h2 {
+    color: #ff5733;
+}
+
+.ai-analysis p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Video on the Right */
+.video-feed {
+    width: 55%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-feed h2 {
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ai-analysis,
+    .video-feed {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture Maths AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <h1>Hand Gesture Maths AI</h1>
+
+    <div class="container">
+        <!-- AI Analysis (Left Side) -->
+        <div class="ai-analysis">
+            <h2>AI Analysis</h2>
+            <p id="ai-result">Waiting for gesture...</p>
+        </div>
+
+        <!-- Video Feed (Right Side) -->
+        <div class="video-feed">
+            <h2>Live Video</h2>
+            <img src="{{ url_for('video_feed') }}" width="100%">
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
