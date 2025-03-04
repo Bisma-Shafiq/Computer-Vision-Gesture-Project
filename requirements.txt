@@ -1,0 +1,9 @@
+mediapipe
+numpy
+pandas
+opencv-python
+cvzone
+google-generativeai
+python-dotenv
+streamlit
+flask
